@@ -8,7 +8,7 @@ export function Navigation() {
     const t = useTranslations("navigation");
     const pathname = usePathname();
     return (
-        <div className="fixed top-0 left-0 right-0">
+        <div className="fixed top-0 left-0 right-0 bg-surface">
             <nav className="text-inky container pt-3.5 pb-2.5 flex gap-16 items-center">
                 <Link href="#" className="font-bold uppercase">
                     Kateřina Hladíková

@@ -9,5 +9,12 @@
         "header": "Front-End Developerka",
         "subtitle": "Ráda se připojím k týmu,<br/> kde má moje práce smysl.",
         "year": "2025 - dosud"
+    },
+
+    "footer": {
+        "paragraph": "Junior Front-End Developerka, aktuálně otevřena<br/>novým příležitostem.",
+        "alt": "Memoji postava s hnědými vlasy a žlutými brýlemi s úsměvem drží ruce pod bradou.",
+        "connect": "Myslíš, že bych se hodila do vašeho týmu nebo projektu?<br />Pojďme se spojit!",
+        "socials": "sociální sítě"
     }
 }
