@@ -1,0 +1,13 @@
+{
+    "navigation": {
+        "about": "kdo jsem",
+        "portfolio": "portfolio",
+        "contact": "kontaktuj mě"
+    },
+
+    "hero": {
+        "header": "Front-End Developerka",
+        "subtitle": "Ráda se připojím k týmu, kde má moje práce smysl.",
+        "year": "2025 - dosud"
+    }
+}

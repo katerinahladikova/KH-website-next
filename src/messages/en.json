@@ -1,0 +1,13 @@
+{
+    "navigation": {
+        "about": "about",
+        "portfolio": "portfolio",
+        "contact": "let´s connect"
+    },
+
+    "hero": {
+        "header": "Front-End Developer",
+        "subtitle": "Ready to join a team where my work is meaningful.",
+        "year": "2025 - present"
+    }
+}
