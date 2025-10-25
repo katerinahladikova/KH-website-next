@@ -12,9 +12,31 @@
     },
 
     "footer": {
-        "paragraph": "Junior Front-End Developerka, aktuálně otevřena<br/>novým příležitostem.",
+        "paragraph": "Front-End Developerka, aktuálně otevřena<br/>novým příležitostem.",
         "alt": "Memoji postava s hnědými vlasy a žlutými brýlemi s úsměvem drží ruce pod bradou.",
         "connect": "Myslíš, že bych se hodila do vašeho týmu nebo projektu?<br />Pojďme se spojit!",
         "socials": "sociální sítě"
+    },
+
+    "about": {
+        "header": "kdo jsem",
+        "quote": "balddsa"
+
+    },
+
+    "portfolio": {
+        "experience": "Moje<br/>zkušenosti",
+        "e1": "základy",
+        "e2": "mírně pokročilá",
+        "e3": "pokročilá",
+        "e4": "expert",
+        "cv": "Stáhnout životopis",
+        "certs": "certifikáty",
+        "projects": "projekty",
+        "p1": "vyrob si pizzu",
+        "p2": "počasí",
+        "p3": "bored api",
+        "p4": "generátor hesel",
+        "project-btn": "Zobrazit projekt"
     }
 }

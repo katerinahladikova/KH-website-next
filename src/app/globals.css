@@ -11,3 +11,7 @@
 @utility container {
   @apply mx-auto px-4
 }
+
+@utility h2 {
+  @apply text-8xl uppercase tracking-[-3px] mb-14 font-bold
+}

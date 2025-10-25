@@ -2,12 +2,35 @@
     "navigation": {
         "about": "about",
         "portfolio": "portfolio",
-        "contact": "let´s connect"
+        "contact": "let's connect"
     },
 
     "hero": {
         "header": "Front-End Developer",
         "subtitle": "Ready to join a team where my work is meaningful.",
         "year": "2025 - present"
+    },
+
+    "footer": {
+        "paragraph": "Front-End Developer, currently open<br/>to new opportunities.",
+        "alt": "Memoji character with brown hair and yellow glasses smiling with hands under chin.",
+        "connect": "Do you think I would be a good fit for your team or project?<br />Let's connect!",
+        "socials": "social networks"
+    },
+
+    "portfolio": {
+        "experience": "My<br/>experience",
+        "e1": "basics",
+        "e2": "intermediate",
+        "e3": "advanced",
+        "e4": "expert",
+        "cv": "Download resume",
+        "certs": "certificates",
+        "projects": "projects",
+        "p1": "make your own pizza",
+        "p2": "weather",
+        "p3": "bored api",
+        "p4": "password generator",
+        "project-btn": "View project"
     }
 }

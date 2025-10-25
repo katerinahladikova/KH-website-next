@@ -10,18 +10,18 @@ export function Navigation() {
     return (
         <div className="fixed top-0 left-0 right-0 bg-surface">
             <nav className="text-inky container pt-3.5 pb-2.5 flex gap-16 items-center">
-                <Link href="#" className="font-bold uppercase">
+                <Link href="/" className="font-bold uppercase">
                     Kateřina Hladíková
                 </Link>
                 <div className="uppercase font-bold text-sm flex justify-between gap-10 items-center">
                     <Link
-                        href="#"
+                        href="/about"
                         className="relative before:absolute before:left-1/2 before:-bottom-2 before:h-0.75 before:bg-inky before:-translate-x-1/2 before:transition-[width] before:w-0 hover:before:w-6"
                     >
                         {t("about")}
                     </Link>
                     <Link
-                        href="#"
+                        href="/portfolio"
                         className="relative before:absolute before:left-1/2 before:-bottom-2 before:h-0.75 before:bg-inky before:-translate-x-1/2 before:transition-[width] before:w-0 hover:before:w-6"
                     >
                         {t("portfolio")}
