@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: "Front-End Developerka",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;

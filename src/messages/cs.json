@@ -20,8 +20,11 @@
 
     "about": {
         "header": "kdo jsem",
-        "quote": "balddsa"
-
+        "quote": "Tvořím moderní a uživatelsky přívětivé weby <br/> s důrazem na detail.",
+        "title": "o mně",
+        "p1": "Jmenuji se Kateřina Hladíková a jsem front-end developerka s vášní pro tvorbu přehledných, funkčních a uživatelsky přívětivých webů. Po několika letech studia v jiné profesi jsem se rozhodla změnit směr a naplno se věnovat tomu, co mě skutečně baví!",
+        "p2": "V rámci rekvalifikace jsem si osvojila HTML, CSS, Tailwind, JavaScript, React a Next.js. Postupně rozvíjím své dovednosti i nadále. Mám cit pro design, důraz na detail a chuť neustále se učit.",
+        "p3": "Momentálně hledám příležitosti, kde bych mohla své znalosti uplatnit v reálných projektech, růst po boku zkušenějších kolegů a přispět nejen svým nadšením, ale i svěžím pohledem."        
     },
 
     "portfolio": {
@@ -30,7 +33,7 @@
         "e2": "mírně pokročilá",
         "e3": "pokročilá",
         "e4": "expert",
-        "cv": "Stáhnout životopis",
+        "button": "Stáhnout životopis",
         "certs": "certifikáty",
         "projects": "projekty",
         "p1": "vyrob si pizzu",

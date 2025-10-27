@@ -1,11 +1,10 @@
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import { Navigation } from "../components/Navigation";
 
-export default function Home() {
+export default async function Home({ params }: Readonly<{ params: Promise<{ locale: string }> }>) {
+    const { locale } = await params;
     return (
         <>
-            <Hero />
+            <Hero locale={locale} />
         </>
     );
 }

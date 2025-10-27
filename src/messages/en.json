@@ -7,7 +7,7 @@
 
     "hero": {
         "header": "Front-End Developer",
-        "subtitle": "Ready to join a team where my work is meaningful.",
+        "subtitle": "Ready to join a team where <br/> my work is meaningful.",
         "year": "2025 - present"
     },
 
@@ -18,13 +18,22 @@
         "socials": "social networks"
     },
 
+    "about": {
+        "header": "about",
+        "quote": "I create modern and user-friendly websites <br/> with an emphasis on detail.",
+        "title": "about me",
+        "p1": "My name is Kateřina Hladíková and I am a front-end developer with a passion for creating clear, functional, and user-friendly websites. After several years of studying a different profession, I decided to change direction and devote myself fully to what I really enjoy!",
+        "p2": "As part of my retraining, I learned HTML, CSS, Tailwind, JavaScript, React, and Next.js. I continue to develop my skills gradually. I have a flair for design, an eye for detail, and a desire to constantly learn.",
+        "p3": "I am currently looking for opportunities where I can apply my knowledge in real projects, grow alongside more experienced colleagues, and contribute not only with my enthusiasm but also with a fresh perspective."        
+    },
+
     "portfolio": {
         "experience": "My<br/>experience",
         "e1": "basics",
         "e2": "intermediate",
         "e3": "advanced",
         "e4": "expert",
-        "cv": "Download resume",
+        "button": "Download resume",
         "certs": "certificates",
         "projects": "projects",
         "p1": "make your own pizza",
