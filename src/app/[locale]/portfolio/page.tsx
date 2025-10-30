@@ -1,3 +1,4 @@
+import Certificates from "@/app/components/Certificates";
 import Experience from "@/app/components/Experience";
 import Project from "@/app/components/Project";
 import { Link } from "@/i18n/navigation";
@@ -5,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 export default function Portfolio() {
     const t = useTranslations("portfolio");
+
     return (
         <div className="container">
             <div className="pt-40 mb-20">
@@ -30,6 +32,7 @@ export default function Portfolio() {
             </div>
             <div>
                 <h2 dangerouslySetInnerHTML={{ __html: t("certs") }} className="h2"></h2>
+                <Certificates />
             </div>
             <div>
                 <h2 dangerouslySetInnerHTML={{ __html: t("projects") }} className="h2"></h2>
