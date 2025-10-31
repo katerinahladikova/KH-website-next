@@ -13,5 +13,5 @@
 }
 
 @utility h2 {
-  @apply text-8xl uppercase tracking-[-3px] mb-14 font-bold
+  @apply text-8xl uppercase tracking-[-3px] mb-14 font-bold max-lg:text-7xl max-md:text-5xl
 }

@@ -8,8 +8,8 @@ export default function Footer() {
     const t = useTranslations("footer");
     return (
         <footer className="bg-black">
-            <div className="grid grid-cols-2 pt-8 font-bold container">
-                <div>
+            <div className="grid md:grid-cols-2 max-md:gap-10 pt-8 font-bold container">
+                <div className="max-md:order-2">
                     <div>
                         <h3 className="text-gray uppercase text-sm font-semibold mb-5">Kateřina Hladíková</h3>
                         <p dangerouslySetInnerHTML={{ __html: t("paragraph") }} className="text-darkgray text-xs"></p>

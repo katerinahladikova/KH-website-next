@@ -14,7 +14,7 @@ export default function Certificates() {
     };
 
     return (
-        <div className="grid grid-cols-3 mb-14">
+        <div className="grid md:grid-cols-3 gap-5 mb-14">
             <Image src="/JSCert.png" alt="blb" width={402} height={284} onClick={() => open(0)} />
             <Image src="/ReactCert.png" alt="blb" width={402} height={284} onClick={() => open(1)} />
             <FsLightbox key={index} toggler={toggler} sources={["/JSCert.png", "/ReactCert.png"]} />

@@ -11,7 +11,7 @@ export default function Portfolio() {
         <div className="container">
             <div className="pt-40 mb-20">
                 <h2 dangerouslySetInnerHTML={{ __html: t("experience") }} className="h2"></h2>
-                <div className="ml-[40%]">
+                <div className="ml-[30%] md:ml-[40%]">
                     <Experience title="HTML" subtitle={t("e3")} />
                     <Experience title="CSS" subtitle={t("e3")} />
                     <Experience title="Tailwind CSS" subtitle={t("e3")} />
@@ -36,7 +36,7 @@ export default function Portfolio() {
             </div>
             <div>
                 <h2 dangerouslySetInnerHTML={{ __html: t("projects") }} className="h2"></h2>
-                <div className="grid grid-cols-3 mb-14 gap-6">
+                <div className="grid md:grid-cols-3 mb-14 gap-6">
                     <Project title={t("p1")} link="https://pizza.katerinahladikova.cz/" badges={["HTML", "CSS", "JavaScript"]} />
                 </div>
             </div>

@@ -6,9 +6,13 @@
     },
 
     "hero": {
-        "header": "Front-End Developerka",
+        "header": "Front-End <br/> Developerka",
         "subtitle": "Ráda se připojím k týmu,<br/> kde má moje práce smysl.",
         "year": "2025 - dosud"
+    },
+
+    "refs": {
+        "header": "Reference"
     },
 
     "footer": {

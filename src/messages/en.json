@@ -6,7 +6,7 @@
     },
 
     "hero": {
-        "header": "Front-End Developer",
+        "header": "Front-End<br/>Developer",
         "subtitle": "Ready to join a team where <br/> my work is meaningful.",
         "year": "2025 - present"
     },
@@ -41,5 +41,8 @@
         "p3": "bored api",
         "p4": "password generator",
         "project-btn": "View project"
+    },
+    "refs": {
+        "header": "References"
     }
 }
