@@ -3,7 +3,7 @@
 import { Link, usePathname } from "@/i18n/navigation";
 import Mail from "./Mail";
 import { useTranslations } from "next-intl";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 
 export function Navigation() {
