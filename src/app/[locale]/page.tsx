@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import Refs from "../components/Refs";
+import Ref from "../components/Ref";
 import { getTranslations } from "next-intl/server";
 
 export default async function Home({ params }: Readonly<{ params: Promise<{ locale: string }> }>) {
@@ -10,7 +10,16 @@ export default async function Home({ params }: Readonly<{ params: Promise<{ loca
         <>
             <Hero locale={locale} />
             <h2 dangerouslySetInnerHTML={{ __html: t("header") }} className="h2 container"></h2>
-            <Refs />
+            <div className="container mb-14 grid lg:grid-cols-3 md:grid-cols-2 gap-5 gap-y-10">
+                <Ref
+                    url="https://it-centrum.cz/"
+                    alt="it centrum"
+                    image="/it-centrum.png"
+                    title="Obchodní centrum Vrchlabí"
+                    subtitle="Web pro obchodní centrum Vrchlabí. Web byl realizován ve spolupráci s Effectivelab."
+                    badges={["Next.js", "Tailwind", "TypeScript"]}
+                />
+            </div>
         </>
     );
 }

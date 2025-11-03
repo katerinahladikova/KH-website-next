@@ -12,7 +12,7 @@ export default function Project({ title, badges, link }: ProjectProps) {
     return (
         <div className="bg-linear-to-b from-[#bdbc9c]/80 to-transparent h-64 rounded-2xl text-center">
             <h3 className="text-3xl m-8 text-inky uppercase font-semibold">{title}</h3>
-            <div className="flex flex-wrap gap-2.5 justify-center max-w-md">
+            <div className="flex flex-wrap gap-2.5 justify-center px-3">
                 {badges?.map((badge, index) => {
                     return (
                         <div key={index} className="shadow-md inline-block bg-white py-1 px-2 rounded-2xl text-inky text-sm font-medium">

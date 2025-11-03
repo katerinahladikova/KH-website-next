@@ -14,10 +14,11 @@ export default function Certificates() {
     };
 
     return (
-        <div className="grid md:grid-cols-3 gap-5 mb-14">
-            <Image src="/JSCert.png" alt="blb" width={402} height={284} onClick={() => open(0)} />
-            <Image src="/ReactCert.png" alt="blb" width={402} height={284} onClick={() => open(1)} />
-            <FsLightbox key={index} toggler={toggler} sources={["/JSCert.png", "/ReactCert.png"]} />
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 mb-14 place-items-center">
+            <Image src="/JSCert.png" alt="Javascript certificate" width={402} height={284} onClick={() => open(0)} />
+            <Image src="/ReactCert.png" alt="React certificate" width={402} height={284} onClick={() => open(1)} />
+            <Image src="/TailwindCert.png" alt="Tailwind certificate" width={402} height={284} onClick={() => open(2)} />
+            <FsLightbox key={index} toggler={toggler} sources={["/JSCert.png", "/ReactCert.png", "/TailwindCert.png"]} />
         </div>
     );
 }

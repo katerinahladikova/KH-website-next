@@ -36,8 +36,11 @@ export default function Portfolio() {
             </div>
             <div>
                 <h2 dangerouslySetInnerHTML={{ __html: t("projects") }} className="h2"></h2>
-                <div className="grid md:grid-cols-3 mb-14 gap-6">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 mb-14 gap-6 gap-y-20">
                     <Project title={t("p1")} link="https://pizza.katerinahladikova.cz/" badges={["HTML", "CSS", "JavaScript"]} />
+                    <Project title={t("p2")} link="https://weatherapp.katerinahladikova.cz/" badges={["HTML", "CSS", "JavaScript", "REST API"]} />
+                    <Project title={t("p3")} link="https://bored.katerinahladikova.cz/" badges={["HTML", "CSS", "JavaScript", "REST API"]} />
+                    <Project title={t("p4")} link="https://passwordgenerator.katerinahladikova.cz/" badges={["HTML", "CSS", "JavaScript"]} />
                 </div>
             </div>
         </div>

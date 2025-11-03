@@ -12,7 +12,7 @@ export default function About() {
                 alt=""
                 width={1248}
                 height={500}
-                className="shadow-2xl w-full object-cover md:object-[position:bottom_-35px_left_0] h-64 rounded-4xl block m-auto my-13 md:h-130"
+                className="shadow-2xl w-full object-cover sm:object-[position:bottom_-35px_left_0] rounded-4xl block m-auto my-13 sm:aspect-[1500/500]"
             />
             <Quote text={t("quote")} />
             <div className="grid md:grid-cols-2 mt-20 mb-8 gap-4 md:gap-24">
