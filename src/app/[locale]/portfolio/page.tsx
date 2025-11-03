@@ -1,7 +1,6 @@
 import Certificates from "@/app/components/Certificates";
 import Experience from "@/app/components/Experience";
 import Project from "@/app/components/Project";
-import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 export default function Portfolio() {
@@ -19,7 +18,7 @@ export default function Portfolio() {
                     <Experience title="TypeScript" subtitle={t("e1")} />
                     <Experience title="React" subtitle={t("e2")} />
                     <Experience title="Next.js" subtitle={t("e1")} />
-                    <Link
+                    <a
                         download
                         href="/CV_Hladikova.pdf"
                         className="shadow-md mt-8 w-max  text-inky rounded-3xl h-9 flex items-center px-3 text-xs font-semibold cursor-pointer relative before:absolute before:top-0
@@ -27,7 +26,7 @@ export default function Portfolio() {
                 before:duration-700 hover:text-white transition-colors duration-700 before:scale-x-215 before:bg-gradient-to-r before:from-inky before:from-50% before:to-50% before:to-white hover:before:translate-x-full"
                     >
                         <span className="z-10 relative">{t("button")}</span>
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div>
