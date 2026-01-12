@@ -11,7 +11,9 @@ export default async function Home({ params }: Readonly<{ params: Promise<{ loca
             <Hero locale={locale} />
             <h2 dangerouslySetInnerHTML={{ __html: t("header") }} className="h2 container"></h2>
             <div className="container mb-14 grid lg:grid-cols-3 md:grid-cols-2 gap-5 gap-y-10">
-                <Ref url="https://it-centrum.cz/" alt="it centrum" image="/it-centrum.png" title={t("t1")} subtitle={t("st1")} badges={["Next.js", "Tailwind", "TypeScript"]} />
+                <Ref url="" alt="pragostoma" image="/pragostoma.jpg" title={t("t1")} subtitle={t("st1")} badges={["Next.js", "Tailwind", "TypeScript"]} />
+                <Ref url="https://it-centrum.cz/" alt="it centrum" image="/it-centrum.png" title={t("t2")} subtitle={t("st2")} badges={["Next.js", "Tailwind", "TypeScript"]} />
+                <Ref url="https://modulypart66.com/" alt="moduly part 66" image="/moduly.jpg" title={t("t4")} subtitle={t("st4")} badges={["Next.js", "Tailwind", "TypeScript"]} />
             </div>
         </>
     );

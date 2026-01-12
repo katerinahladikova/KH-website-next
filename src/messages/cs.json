@@ -13,8 +13,17 @@
 
     "refs": {
         "header": "Reference",
-        "t1": "Obchodní centrum Vrchlabí",
-        "st1": "Web pro obchodní centrum Vrchlabí. Web byl realizován ve spolupráci s Effectivelab."
+        "t1": "Pragostoma",
+        "st1": "Realizace frontendu webu pro zubní kliniku Pragostoma ve spolupráci s Effectivelab.",
+
+        "t2": "Obchodní centrum Vrchlabí",
+        "st2": "Web pro obchodní centrum Vrchlabí. Web byl realizován ve spolupráci s Effectivelab.",
+
+        "t3": "Sandra Carvajal Starling",
+        "st3": "Web pro českou abstraktní malířku Sandru Carvajal Starling, vytvořený ve spolupráci s Effectivelab.",
+
+        "t4": "Moduly part 66",
+        "st4": "Web pro přihlašování na zkoušky a evidenci výsledků."
     },
 
     "footer": {

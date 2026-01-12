@@ -13,8 +13,17 @@
 
     "refs": {
         "header": "References",
-        "t1": "Vrchlabí Shopping Center",
-        "st1": "Website for the Vrchlabí shopping center. The website was created in collaboration with Effectivelab."
+        "t1": "Pragostoma",
+        "st1": "Frontend implementation for the Pragostoma dental clinic in collaboration with Effectivelab.",
+
+        "t2": "Vrchlabí Shopping Center",
+        "st2": "Website for the Vrchlabí Shopping Center. The website was created in collaboration with Effectivelab.",
+
+        "t3": "Sandra Carvajal Starling",
+        "st3": "Website for Czech abstract painter Sandra Carvajal Starling, created in collaboration with Effectivelab.",
+
+        "t4": "Modules part 66",
+        "st4": "Website for exam registration and results recording."
     },
 
     "footer": {
