@@ -10,7 +10,7 @@
         "subtitle": "Ready to join a team where <br/> my work is meaningful.",
         "year": "2025 - present"
     },
-
+ 
     "refs": {
         "header": "References",
         "t1": "Pragostoma",
@@ -23,7 +23,9 @@
         "st3": "Website for Czech abstract painter Sandra Carvajal Starling, created in collaboration with Effectivelab.",
 
         "t4": "Modules part 66",
-        "st4": "Website for exam registration and results recording."
+        "st4": "Website for exam registration and results recording.",
+
+        "tooltip": "Soon"
     },
 
     "footer": {
