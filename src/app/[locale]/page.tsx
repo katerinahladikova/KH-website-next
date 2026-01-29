@@ -13,7 +13,15 @@ export default async function Home({ params }: Readonly<{ params: Promise<{ loca
             <div className="container mb-14 grid lg:grid-cols-3 md:grid-cols-2 gap-5 gap-y-10">
                 <Ref tooltip={t("tooltip")} alt="pragostoma" image="/pragostoma.jpg" title={t("t1")} subtitle={t("st1")} badges={["Next.js", "Tailwind", "TypeScript"]} />
                 <Ref tooltip={t("tooltip")} url="https://it-centrum.cz/" alt="it centrum" image="/it-centrum.png" title={t("t2")} subtitle={t("st2")} badges={["Next.js", "Tailwind", "TypeScript"]} />
-                <Ref tooltip={t("tooltip")} alt="sanstarling" image="/sanstarling.jpg" title={t("t3")} subtitle={t("st3")} badges={["Next.js", "Tailwind", "TypeScript", "Strapi"]} />
+                <Ref
+                    tooltip={t("tooltip")}
+                    url="https://sanstarling.com/"
+                    alt="sanstarling"
+                    image="/sanstarling.jpg"
+                    title={t("t3")}
+                    subtitle={t("st3")}
+                    badges={["Next.js", "Tailwind", "TypeScript", "Strapi"]}
+                />
                 <Ref
                     tooltip={t("tooltip")}
                     url="https://modulypart66.com/"
