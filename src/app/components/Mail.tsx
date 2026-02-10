@@ -18,7 +18,11 @@ export default function Mail({ mail }: MailProps) {
     };
 
     return (
-        <button onClick={handleClick} className="bg-white rounded-3xl h-8.5 flex items-center gap-1 px-3 text-xs font-semibold cursor-pointer">
+        <button
+            onClick={handleClick}
+            className="bg-white rounded-3xl h-8.5 flex items-center gap-1 px-3 text-xs font-semibold cursor-pointer"
+            data-test="mail-button"
+        >
             {mail}
             <Icon icon={icon} className="text-base opacity-50" />
         </button>

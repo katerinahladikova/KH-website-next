@@ -31,17 +31,23 @@ export function Navigation() {
     }, []);
 
     return (
-        <div className={`fixed top-0 left-0 right-0 bg-surface/80 transition-transform backdrop-blur-md z-20 ${scrolled && !isMenuOpen ? "-translate-y-full" : "translate-y-0"}`}>
-            <nav className="text-inky container pt-3.5 pb-2.5 flex gap-16 items-center max-lg:justify-between">
-                <Link href="/" className="font-bold uppercase z-20">
+        <div
+            className={`fixed top-0 left-0 right-0 bg-surface/80 transition-transform backdrop-blur-md z-20 ${
+                scrolled && !isMenuOpen ? "-translate-y-full" : "translate-y-0"
+            }`}
+            data-test="nav-wrapper"
+        >
+            <nav className="text-inky container pt-3.5 pb-2.5 flex gap-16 items-center max-lg:justify-between" data-test="nav-bar">
+                <Link href="/" className="font-bold uppercase z-20" data-test="nav-logo">
                     Kateřina Hladíková
                 </Link>
-                <div className="uppercase font-bold text-sm flex justify-between gap-10 items-center max-lg:hidden">
+                <div className="uppercase font-bold text-sm flex justify-between gap-10 items-center max-lg:hidden" data-test="nav-links-desktop">
                     <Link
                         href="/about"
                         className={`relative before:absolute before:left-1/2 before:-bottom-2 before:h-0.75 before:bg-inky before:-translate-x-1/2 before:transition-[width] before:w-0 hover:before:w-6 ${
                             pathname.includes("about") ? "before:w-6" : ""
                         }`}
+                        data-test="nav-link-about-desktop"
                     >
                         {t("about")}
                     </Link>
@@ -50,38 +56,45 @@ export function Navigation() {
                         className={`relative before:absolute before:left-1/2 before:-bottom-2 before:h-0.75 before:bg-inky before:-translate-x-1/2 before:transition-[width] before:w-0 hover:before:w-6 ${
                             pathname.includes("portfolio") ? "before:w-6" : ""
                         }`}
+                        data-test="nav-link-portfolio-desktop"
                     >
                         {t("portfolio")}
                     </Link>
                 </div>
-                <div className="uppercase font-bold text-sm m-auto mr-0 flex justify-between gap-5 items-center max-lg:hidden">
-                    <p>{t("contact")}</p>
+                <div className="uppercase font-bold text-sm m-auto mr-0 flex justify-between gap-5 items-center max-lg:hidden" data-test="nav-contact-desktop">
+                    <p data-test="nav-contact-label">{t("contact")}</p>
                     <Mail mail="kat.hladikova@email.cz" />
-                    <div className="flex justify-center gap-1 text-base">
-                        <Link href={pathname} locale="cs">
+                    <div className="flex justify-center gap-1 text-base" data-test="nav-locale-switcher-desktop">
+                        <Link href={pathname} locale="cs" data-test="nav-locale-cs-desktop">
                             CZ
                         </Link>
                         |
-                        <Link href={pathname} locale="en">
+                        <Link href={pathname} locale="en" data-test="nav-locale-en-desktop">
                             EN
                         </Link>
                     </div>
                 </div>
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-white rounded-3xl h-8 px-3 cursor-pointer z-20 lg:hidden">
+                <button
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    className="bg-white rounded-3xl h-8 px-3 cursor-pointer z-20 lg:hidden"
+                    data-test="nav-menu-toggle"
+                >
                     <Icon icon={isMenuOpen ? "material-symbols:close" : "material-symbols:menu"} className="text-2xl" />
                 </button>
                 <div
                     className={`transition-all fixed lg:hidden top-0 left-0 right-0 h-screen z-10 bg-surface grid place-items-center ${
                         isMenuOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-full pointer-events-none"
                     }`}
+                    data-test="nav-mobile-menu"
                 >
                     <div className="container flex flex-col gap-60 items-center">
-                        <div className="uppercase font-bold text-sm flex flex-col gap-5 items-center">
+                        <div className="uppercase font-bold text-sm flex flex-col gap-5 items-center" data-test="nav-links-mobile">
                             <Link
                                 href="/about"
                                 className={`relative before:absolute before:left-1/2 before:-bottom-2 before:h-0.75 before:bg-inky before:-translate-x-1/2 before:transition-[width] before:w-0 hover:before:w-6 ${
                                     pathname.includes("about") ? "before:w-6" : ""
                                 }`}
+                                data-test="nav-link-about-mobile"
                             >
                                 {t("about")}
                             </Link>
@@ -90,19 +103,20 @@ export function Navigation() {
                                 className={`relative before:absolute before:left-1/2 before:-bottom-2 before:h-0.75 before:bg-inky before:-translate-x-1/2 before:transition-[width] before:w-0 hover:before:w-6 ${
                                     pathname.includes("portfolio") ? "before:w-6" : ""
                                 }`}
+                                data-test="nav-link-portfolio-mobile"
                             >
                                 {t("portfolio")}
                             </Link>
                         </div>
-                        <div className="uppercase font-bold text-sm flex flex-col gap-5 items-center">
-                            <p>{t("contact")}</p>
+                        <div className="uppercase font-bold text-sm flex flex-col gap-5 items-center" data-test="nav-contact-mobile">
+                            <p data-test="nav-contact-label-mobile">{t("contact")}</p>
                             <Mail mail="kat.hladikova@email.cz" />
-                            <div className="flex justify-center gap-1 text-base">
-                                <Link href={pathname} locale="cs">
+                            <div className="flex justify-center gap-1 text-base" data-test="nav-locale-switcher-mobile">
+                                <Link href={pathname} locale="cs" data-test="nav-locale-cs-mobile">
                                     CZ
                                 </Link>
                                 |
-                                <Link href={pathname} locale="en">
+                                <Link href={pathname} locale="en" data-test="nav-locale-en-mobile">
                                     EN
                                 </Link>
                             </div>
