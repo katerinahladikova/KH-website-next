@@ -9,8 +9,8 @@ export default async function Home({ params }: Readonly<{ params: Promise<{ loca
     return (
         <>
             <Hero locale={locale} />
-            <h2 dangerouslySetInnerHTML={{ __html: t("header") }} className="h2 container"></h2>
-            <div className="container mb-14 grid lg:grid-cols-3 md:grid-cols-2 gap-5 gap-y-10">
+            <h2 dangerouslySetInnerHTML={{ __html: t("header") }} className="h2 container" data-test="home-refs-heading"></h2>
+            <div className="container mb-14 grid lg:grid-cols-3 md:grid-cols-2 gap-5 gap-y-10" data-test="home-refs-grid">
                 <Ref tooltip={t("tooltip")} alt="pragostoma" image="/pragostoma.jpg" title={t("t1")} subtitle={t("st1")} badges={["Next.js", "Tailwind", "TypeScript"]} />
                 <Ref tooltip={t("tooltip")} url="https://it-centrum.cz/" alt="it centrum" image="/it-centrum.png" title={t("t2")} subtitle={t("st2")} badges={["Next.js", "Tailwind", "TypeScript"]} />
                 <Ref
