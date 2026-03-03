@@ -20,7 +20,7 @@ export function Navigation() {
         let prevScroll = 0;
 
         window.addEventListener("scroll", () => {
-            if (window.scrollY > prevScroll) {
+            if (window.scrollY > prevScroll && window.scrollY > 0) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -30,8 +30,13 @@ export function Navigation() {
         });
     }, []);
 
+    useEffect(() => {
+        document.documentElement.classList.toggle("overflow-hidden!", isMenuOpen);
+        document.body.classList.toggle("overflow-hidden!", isMenuOpen);
+    }, [isMenuOpen]);
+
     return (
-        <div className={`fixed top-0 left-0 right-0 bg-surface/80 transition-transform backdrop-blur-md z-20 ${scrolled && !isMenuOpen ? "-translate-y-full" : "translate-y-0"}`}>
+        <div className={`fixed top-0 left-0 right-0 bg-surface/80 transition-transform backdrop-blur-md z-40 ${scrolled && !isMenuOpen ? "-translate-y-full" : "translate-y-0"}`}>
             <nav className="text-inky container pt-3.5 pb-2.5 flex gap-16 items-center max-lg:justify-between">
                 <Link href="/" className="font-bold uppercase z-20">
                     Kateřina Hladíková
@@ -67,7 +72,7 @@ export function Navigation() {
                         </Link>
                     </div>
                 </div>
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-white rounded-3xl h-8 px-3 cursor-pointer z-20 lg:hidden">
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-white rounded-3xl h-8 px-3 cursor-pointer z-50 lg:hidden">
                     <Icon icon={isMenuOpen ? "material-symbols:close" : "material-symbols:menu"} className="text-2xl" />
                 </button>
                 <div
