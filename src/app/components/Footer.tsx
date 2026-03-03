@@ -7,28 +7,45 @@ import { Icon } from "@iconify/react";
 export default function Footer() {
     const t = useTranslations("footer");
     return (
-        <footer className="bg-black">
+        <footer className="bg-black" data-test="footer">
             <div className="grid md:grid-cols-2 max-md:gap-10 pt-8 font-bold container">
-                <div className="max-md:order-2">
+                <div className="max-md:order-2" data-test="footer-left">
                     <div>
-                        <h3 className="text-gray uppercase text-sm font-semibold mb-5">Kateřina Hladíková</h3>
-                        <p dangerouslySetInnerHTML={{ __html: t("paragraph") }} className="text-darkgray text-xs"></p>
+                        <h3 className="text-gray uppercase text-sm font-semibold mb-5" data-test="footer-name">
+                            Kateřina Hladíková
+                        </h3>
+                        <p
+                            dangerouslySetInnerHTML={{ __html: t("paragraph") }}
+                            className="text-darkgray text-xs"
+                            data-test="footer-paragraph"
+                        ></p>
                     </div>
-                    <Image src="/memoji-hands.png" alt={t("alt")} width={250} height={250} />
+                    <Image src="/memoji-hands.png" alt={t("alt")} width={250} height={250} data-test="footer-image" />
                 </div>
-                <div>
-                    <p dangerouslySetInnerHTML={{ __html: t("connect") }} className="text-surface text-xl mb-7 font-semibold"></p>
+                <div data-test="footer-right">
+                    <p
+                        dangerouslySetInnerHTML={{ __html: t("connect") }}
+                        className="text-surface text-xl mb-7 font-semibold"
+                        data-test="footer-connect"
+                    ></p>
                     <Mail mail="kat.hladikova@email.cz" />
                     <div className="mt-12">
-                        <h3 className="text-darkgray uppercase text-sm font-semibold mb-5">{t("socials")}</h3>
-                        <div className="flex gap-5 w-max text-surface">
-                            <Link href="https://github.com/katerinahladikova" className="flex items-center gap-1.5 text-surface font-normal hover:text-[#ffffffa9] transition-colors">
+                        <h3 className="text-darkgray uppercase text-sm font-semibold mb-5" data-test="footer-socials-heading">
+                            {t("socials")}
+                        </h3>
+                        <div className="flex gap-5 w-max text-surface" data-test="footer-socials">
+                            <Link
+                                href="https://github.com/katerinahladikova"
+                                className="flex items-center gap-1.5 text-surface font-normal hover:text-[#ffffffa9] transition-colors"
+                                data-test="footer-github-link"
+                            >
                                 <Icon icon={"entypo-social:github"} />
                                 GitHub
                             </Link>
                             <Link
                                 href="https://www.linkedin.com/in/kate%C5%99ina-hlad%C3%ADkova-71818b336/"
                                 className="flex items-center gap-1.5 text-surface font-normal hover:text-[#ffffffa9] transition-colors"
+                                data-test="footer-linkedin-link"
                             >
                                 <Icon icon={"entypo-social:linkedin-with-circle"} />
                                 LinkedIn
@@ -37,7 +54,12 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#1e1e1e] text-darkgray text-center content-center h-12 uppercase text-xs font-semibold">© Kateřina Hladíková 2025</div>
+            <div
+                className="bg-[#1e1e1e] text-darkgray text-center content-center h-12 uppercase text-xs font-semibold"
+                data-test="footer-copyright"
+            >
+                © Kateřina Hladíková 2025
+            </div>
         </footer>
     );
 }
