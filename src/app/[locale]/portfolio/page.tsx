@@ -18,9 +18,11 @@ export default function Portfolio() {
                     <Experience title="TypeScript" subtitle={t("e1")} />
                     <Experience title="React" subtitle={t("e2")} />
                     <Experience title="Next.js" subtitle={t("e1")} />
+                    {/*
+                    
                     <a
                         download
-                        href="/CV_Hladikova.pdf"
+                        href=""
                         className="shadow-md mt-8 w-max  text-inky rounded-3xl h-9 flex items-center px-3 text-xs font-semibold cursor-pointer relative before:absolute before:top-0
                 before:-right-5 before:bottom-0 before:-left-5 before:-skew-x-22 overflow-hidden before:transition-transform before:origin-right
                 before:duration-700 hover:text-white transition-colors duration-700 before:scale-x-215 before:bg-gradient-to-r before:from-inky before:from-50% before:to-50% before:to-white hover:before:translate-x-full"
@@ -28,6 +30,8 @@ export default function Portfolio() {
                     >
                         <span className="z-10 relative">{t("button")}</span>
                     </a>
+                    
+                    */}
                 </div>
             </div>
             <div data-test="portfolio-certificates-section">
